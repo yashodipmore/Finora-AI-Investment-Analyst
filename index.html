@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -433,10 +432,201 @@
 
             <div class="figure">
                 <div class="figure-title">Figure 1: System Processing Pipeline</div>
-                <div class="methodology-box">
-                    <p style="text-align: center; margin: 0;"><strong>Upload</strong> → <strong>OCR Extraction</strong> → <strong>Data Validation</strong> → <strong>ML Analysis</strong> → <strong>NLP Translation</strong> → <strong>Visualization</strong> → <strong>User Dashboard</strong></p>
-                    <p style="margin-top: 15px; font-size: 0.9em; color: #555;">Processing Time: &lt;30 seconds | Accuracy: 85%+ | Supported Formats: PDF, Excel, Images</p>
-                </div>
+                <svg viewBox="0 0 1200 400" style="width: 100%; height: auto; background: white; border: 1px solid #e0e0e0;">
+                    <!-- Upload Stage -->
+                    <rect x="20" y="80" width="140" height="80" fill="#2c3e50" rx="5"/>
+                    <text x="90" y="115" text-anchor="middle" fill="white" font-size="14" font-weight="600">Document</text>
+                    <text x="90" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="600">Upload</text>
+                    <text x="90" y="155" text-anchor="middle" fill="#95a5a6" font-size="11">PDF/Excel/Image</text>
+                    
+                    <!-- Arrow 1 -->
+                    <path d="M 160 120 L 200 120" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- OCR Stage -->
+                    <rect x="200" y="80" width="140" height="80" fill="#2c3e50" rx="5"/>
+                    <text x="270" y="115" text-anchor="middle" fill="white" font-size="14" font-weight="600">OCR</text>
+                    <text x="270" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="600">Extraction</text>
+                    <text x="270" y="155" text-anchor="middle" fill="#95a5a6" font-size="11">Tesseract</text>
+                    
+                    <!-- Arrow 2 -->
+                    <path d="M 340 120 L 380 120" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- Validation Stage -->
+                    <rect x="380" y="80" width="140" height="80" fill="#2c3e50" rx="5"/>
+                    <text x="450" y="115" text-anchor="middle" fill="white" font-size="14" font-weight="600">Data</text>
+                    <text x="450" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="600">Validation</text>
+                    <text x="450" y="155" text-anchor="middle" fill="#95a5a6" font-size="11">Cross-verify</text>
+                    
+                    <!-- Arrow 3 -->
+                    <path d="M 520 120 L 560 120" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- ML Analysis Stage -->
+                    <rect x="560" y="80" width="140" height="80" fill="#e74c3c" rx="5"/>
+                    <text x="630" y="115" text-anchor="middle" fill="white" font-size="14" font-weight="600">ML Analysis</text>
+                    <text x="630" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="600">& Metrics</text>
+                    <text x="630" y="155" text-anchor="middle" fill="#f5b7b1" font-size="11">TensorFlow</text>
+                    
+                    <!-- Arrow 4 -->
+                    <path d="M 700 120 L 740 120" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- NLP Translation Stage -->
+                    <rect x="740" y="80" width="140" height="80" fill="#e74c3c" rx="5"/>
+                    <text x="810" y="115" text-anchor="middle" fill="white" font-size="14" font-weight="600">NLP</text>
+                    <text x="810" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="600">Translation</text>
+                    <text x="810" y="155" text-anchor="middle" fill="#f5b7b1" font-size="11">FinBERT</text>
+                    
+                    <!-- Arrow 5 -->
+                    <path d="M 880 120 L 920 120" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- Visualization Stage -->
+                    <rect x="920" y="80" width="140" height="80" fill="#27ae60" rx="5"/>
+                    <text x="990" y="115" text-anchor="middle" fill="white" font-size="14" font-weight="600">Visualization</text>
+                    <text x="990" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="600">& Insights</text>
+                    <text x="990" y="155" text-anchor="middle" fill="#a9dfbf" font-size="11">React + D3.js</text>
+                    
+                    <!-- Arrow 6 -->
+                    <path d="M 1060 120 L 1100 120" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- Dashboard Stage -->
+                    <rect x="1020" y="200" width="160" height="80" fill="#27ae60" rx="5"/>
+                    <text x="1100" y="230" text-anchor="middle" fill="white" font-size="14" font-weight="600">User Dashboard</text>
+                    <text x="1100" y="250" text-anchor="middle" fill="white" font-size="14" font-weight="600">& Reports</text>
+                    <text x="1100" y="270" text-anchor="middle" fill="#a9dfbf" font-size="11">Interactive UI</text>
+                    
+                    <!-- Curved arrow to dashboard -->
+                    <path d="M 1100 160 Q 1100 180 1100 200" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                    
+                    <!-- Performance Metrics Box -->
+                    <rect x="20" y="240" width="980" height="100" fill="#ecf0f1" rx="5" stroke="#bdc3c7" stroke-width="1"/>
+                    <text x="510" y="265" text-anchor="middle" fill="#2c3e50" font-size="15" font-weight="700">Performance Metrics</text>
+                    <text x="200" y="295" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Processing Time:</text>
+                    <text x="200" y="315" text-anchor="middle" fill="#e74c3c" font-size="14" font-weight="700">&lt; 30 seconds</text>
+                    <text x="510" y="295" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Accuracy Rate:</text>
+                    <text x="510" y="315" text-anchor="middle" fill="#27ae60" font-size="14" font-weight="700">85%+</text>
+                    <text x="820" y="295" text-anchor="middle" fill="#34495e" font-size="13" font-weight="600">Supported Formats:</text>
+                    <text x="820" y="315" text-anchor="middle" fill="#2980b9" font-size="14" font-weight="700">PDF, Excel, Images</text>
+                    
+                    <!-- Arrow marker definition -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#34495e"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="figure">
+                <div class="figure-title">Figure 2: MERN Stack Architecture with AI Integration</div>
+                <svg viewBox="0 0 1200 600" style="width: 100%; height: auto; background: #f8f9fa; border: 1px solid #e0e0e0;">
+                    <!-- Client Layer -->
+                    <rect x="50" y="30" width="1100" height="120" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="600" y="20" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="700">CLIENT LAYER</text>
+                    
+                    <!-- React Components -->
+                    <rect x="100" y="50" width="200" height="80" fill="#61dafb" rx="5"/>
+                    <text x="200" y="75" text-anchor="middle" fill="#000" font-size="14" font-weight="600">React.js Frontend</text>
+                    <text x="200" y="95" text-anchor="middle" fill="#000" font-size="11">• Dashboard UI</text>
+                    <text x="200" y="110" text-anchor="middle" fill="#000" font-size="11">• Data Visualizations</text>
+                    <text x="200" y="125" text-anchor="middle" fill="#000" font-size="11">• Real-time Updates</text>
+                    
+                    <rect x="350" y="50" width="200" height="80" fill="#61dafb" rx="5"/>
+                    <text x="450" y="75" text-anchor="middle" fill="#000" font-size="14" font-weight="600">D3.js + Recharts</text>
+                    <text x="450" y="95" text-anchor="middle" fill="#000" font-size="11">• Interactive Charts</text>
+                    <text x="450" y="110" text-anchor="middle" fill="#000" font-size="11">• Trend Analysis</text>
+                    <text x="450" y="125" text-anchor="middle" fill="#000" font-size="11">• Heatmaps</text>
+                    
+                    <rect x="600" y="50" width="200" height="80" fill="#61dafb" rx="5"/>
+                    <text x="700" y="75" text-anchor="middle" fill="#000" font-size="14" font-weight="600">WebSocket Client</text>
+                    <text x="700" y="95" text-anchor="middle" fill="#000" font-size="11">• Live Progress</text>
+                    <text x="700" y="110" text-anchor="middle" fill="#000" font-size="11">• Real-time Alerts</text>
+                    <text x="700" y="125" text-anchor="middle" fill="#000" font-size="11">• Instant Updates</text>
+                    
+                    <rect x="850" y="50" width="200" height="80" fill="#61dafb" rx="5"/>
+                    <text x="950" y="75" text-anchor="middle" fill="#000" font-size="14" font-weight="600">GraphQL Client</text>
+                    <text x="950" y="95" text-anchor="middle" fill="#000" font-size="11">• Efficient Queries</text>
+                    <text x="950" y="110" text-anchor="middle" fill="#000" font-size="11">• Data Fetching</text>
+                    <text x="950" y="125" text-anchor="middle" fill="#000" font-size="11">• Caching</text>
+                    
+                    <!-- API Gateway Layer -->
+                    <rect x="50" y="190" width="1100" height="100" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="600" y="180" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="700">API GATEWAY LAYER</text>
+                    
+                    <rect x="150" y="210" width="900" height="60" fill="#68a063" rx="5"/>
+                    <text x="600" y="235" text-anchor="middle" fill="white" font-size="15" font-weight="600">Express.js API Server</text>
+                    <text x="300" y="255" text-anchor="middle" fill="white" font-size="11">RESTful Endpoints</text>
+                    <text x="500" y="255" text-anchor="middle" fill="white" font-size="11">JWT Authentication</text>
+                    <text x="700" y="255" text-anchor="middle" fill="white" font-size="11">GraphQL Resolvers</text>
+                    <text x="900" y="255" text-anchor="middle" fill="white" font-size="11">WebSocket Server</text>
+                    
+                    <!-- Arrows from Client to API -->
+                    <path d="M 200 130 L 200 210" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 450 130 L 450 210" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 700 130 L 700 210" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 950 130 L 950 210" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    
+                    <!-- Business Logic Layer -->
+                    <rect x="50" y="330" width="1100" height="120" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="600" y="320" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="700">BUSINESS LOGIC & AI LAYER</text>
+                    
+                    <rect x="100" y="350" width="200" height="80" fill="#f39c12" rx="5"/>
+                    <text x="200" y="375" text-anchor="middle" fill="white" font-size="14" font-weight="600">Node.js Services</text>
+                    <text x="200" y="395" text-anchor="middle" fill="white" font-size="11">• File Processing</text>
+                    <text x="200" y="410" text-anchor="middle" fill="white" font-size="11">• Data Validation</text>
+                    <text x="200" y="425" text-anchor="middle" fill="white" font-size="11">• API Logic</text>
+                    
+                    <rect x="350" y="350" width="200" height="80" fill="#e74c3c" rx="5"/>
+                    <text x="450" y="375" text-anchor="middle" fill="white" font-size="14" font-weight="600">TensorFlow.js ML</text>
+                    <text x="450" y="395" text-anchor="middle" fill="white" font-size="11">• Ratio Analysis</text>
+                    <text x="450" y="410" text-anchor="middle" fill="white" font-size="11">• Anomaly Detection</text>
+                    <text x="450" y="425" text-anchor="middle" fill="white" font-size="11">• Forecasting</text>
+                    
+                    <rect x="600" y="350" width="200" height="80" fill="#e74c3c" rx="5"/>
+                    <text x="700" y="375" text-anchor="middle" fill="white" font-size="14" font-weight="600">FinBERT NLP</text>
+                    <text x="700" y="395" text-anchor="middle" fill="white" font-size="11">• Text Translation</text>
+                    <text x="700" y="410" text-anchor="middle" fill="white" font-size="11">• Entity Recognition</text>
+                    <text x="700" y="425" text-anchor="middle" fill="white" font-size="11">• Sentiment Analysis</text>
+                    
+                    <rect x="850" y="350" width="200" height="80" fill="#9b59b6" rx="5"/>
+                    <text x="950" y="375" text-anchor="middle" fill="white" font-size="14" font-weight="600">Tesseract OCR</text>
+                    <text x="950" y="395" text-anchor="middle" fill="white" font-size="11">• Document Scan</text>
+                    <text x="950" y="410" text-anchor="middle" fill="white" font-size="11">• Text Extraction</text>
+                    <text x="950" y="425" text-anchor="middle" fill="white" font-size="11">• Table Detection</text>
+                    
+                    <!-- Arrows from API to Business Logic -->
+                    <path d="M 300 270 L 200 350" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 500 270 L 450 350" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 700 270 L 700 350" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 900 270 L 950 350" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    
+                    <!-- Data Layer -->
+                    <rect x="50" y="490" width="1100" height="90" fill="none" stroke="#2c3e50" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="600" y="480" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="700">DATA LAYER</text>
+                    
+                    <rect x="150" y="510" width="220" height="60" fill="#47a248" rx="5"/>
+                    <text x="260" y="535" text-anchor="middle" fill="white" font-size="14" font-weight="600">MongoDB</text>
+                    <text x="260" y="555" text-anchor="middle" fill="white" font-size="11">Documents, Users, Analysis</text>
+                    
+                    <rect x="420" y="510" width="220" height="60" fill="#d82c20" rx="5"/>
+                    <text x="530" y="535" text-anchor="middle" fill="white" font-size="14" font-weight="600">Redis Cache</text>
+                    <text x="530" y="555" text-anchor="middle" fill="white" font-size="11">Sessions, Results Cache</text>
+                    
+                    <rect x="690" y="510" width="220" height="60" fill="#ff9900" rx="5"/>
+                    <text x="800" y="535" text-anchor="middle" fill="white" font-size="14" font-weight="600">AWS S3</text>
+                    <text x="800" y="555" text-anchor="middle" fill="white" font-size="11">File Storage, Backups</text>
+                    
+                    <!-- Arrows from Business Logic to Data -->
+                    <path d="M 200 430 L 260 510" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 450 430 L 530 510" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 700 430 L 530 510" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    <path d="M 950 430 L 800 510" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+                    
+                    <!-- Arrow marker definition -->
+                    <defs>
+                        <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#34495e"/>
+                        </marker>
+                    </defs>
+                </svg>
             </div>
 
             <div class="subsection-title">2.2 Core Functional Components</div>
@@ -542,6 +732,104 @@
             <div class="subsection-title">3.2 Machine Learning Pipeline</div>
             <p>The ML pipeline consists of three specialized model types working in concert:</p>
 
+            <div class="figure">
+                <div class="figure-title">Figure 3: AI/ML Processing Workflow</div>
+                <svg viewBox="0 0 1200 700" style="width: 100%; height: auto; background: white; border: 1px solid #e0e0e0;">
+                    <!-- Input Stage -->
+                    <rect x="50" y="50" width="200" height="100" fill="#3498db" rx="5"/>
+                    <text x="150" y="85" text-anchor="middle" fill="white" font-size="16" font-weight="700">INPUT</text>
+                    <text x="150" y="110" text-anchor="middle" fill="white" font-size="12">Financial Document</text>
+                    <text x="150" y="130" text-anchor="middle" fill="#ecf0f1" font-size="11">(PDF/Excel/Image)</text>
+                    
+                    <!-- Arrow to Pre-processing -->
+                    <path d="M 250 100 L 320 100" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+                    
+                    <!-- Pre-processing -->
+                    <rect x="320" y="50" width="200" height="100" fill="#9b59b6" rx="5"/>
+                    <text x="420" y="80" text-anchor="middle" fill="white" font-size="15" font-weight="700">Pre-processing</text>
+                    <text x="420" y="105" text-anchor="middle" fill="white" font-size="11">• OCR Extraction</text>
+                    <text x="420" y="125" text-anchor="middle" fill="white" font-size="11">• Data Cleaning</text>
+                    <text x="420" y="145" text-anchor="middle" fill="white" font-size="11">• Format Normalization</text>
+                    
+                    <!-- Arrow split to three paths -->
+                    <path d="M 520 100 L 580 100" stroke="#2c3e50" stroke-width="3" fill="none"/>
+                    <path d="M 580 100 L 580 200" stroke="#2c3e50" stroke-width="3" fill="none"/>
+                    <path d="M 580 100 L 580 350" stroke="#2c3e50" stroke-width="3" fill="none"/>
+                    <path d="M 580 100 L 580 500" stroke="#2c3e50" stroke-width="3" fill="none"/>
+                    
+                    <!-- Path 1: NLP Processing -->
+                    <path d="M 580 200 L 650 200" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+                    <rect x="650" y="150" width="250" height="100" fill="#e74c3c" rx="5"/>
+                    <text x="775" y="180" text-anchor="middle" fill="white" font-size="15" font-weight="700">NLP Processing</text>
+                    <text x="775" y="205" text-anchor="middle" fill="white" font-size="11">• FinBERT Language Model</text>
+                    <text x="775" y="225" text-anchor="middle" fill="white" font-size="11">• Named Entity Recognition</text>
+                    <text x="775" y="245" text-anchor="middle" fill="white" font-size="11">• Sentiment Analysis</text>
+                    
+                    <!-- Path 2: Financial ML -->
+                    <path d="M 580 350 L 650 350" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+                    <rect x="650" y="300" width="250" height="100" fill="#e67e22" rx="5"/>
+                    <text x="775" y="330" text-anchor="middle" fill="white" font-size="15" font-weight="700">Financial ML Models</text>
+                    <text x="775" y="355" text-anchor="middle" fill="white" font-size="11">• Ratio Analysis (Ensemble)</text>
+                    <text x="775" y="375" text-anchor="middle" fill="white" font-size="11">• Time-Series Forecasting</text>
+                    <text x="775" y="395" text-anchor="middle" fill="white" font-size="11">• Pattern Recognition</text>
+                    
+                    <!-- Path 3: Anomaly Detection -->
+                    <path d="M 580 500 L 650 500" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead3)"/>
+                    <rect x="650" y="450" width="250" height="100" fill="#f39c12" rx="5"/>
+                    <text x="775" y="480" text-anchor="middle" fill="white" font-size="15" font-weight="700">Anomaly Detection</text>
+                    <text x="775" y="505" text-anchor="middle" fill="white" font-size="11">• Isolation Forest</text>
+                    <text x="775" y="525" text-anchor="middle" fill="white" font-size="11">• Statistical Outliers</text>
+                    <text x="775" y="545" text-anchor="middle" fill="white" font-size="11">• Fraud Detection</text>
+                    
+                    <!-- Convergence point -->
+                    <path d="M 900 200 L 950 200 L 950 350" stroke="#2c3e50" stroke-width="2" fill="none"/>
+                    <path d="M 900 350 L 950 350" stroke="#2c3e50" stroke-width="2" fill="none"/>
+                    <path d="M 900 500 L 950 500 L 950 350" stroke="#2c3e50" stroke-width="2" fill="none"/>
+                    <path d="M 950 350 L 1020 350" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+                    
+                    <!-- Integration Layer -->
+                    <rect x="1020" y="300" width="150" height="100" fill="#16a085" rx="5"/>
+                    <text x="1095" y="330" text-anchor="middle" fill="white" font-size="15" font-weight="700">Integration</text>
+                    <text x="1095" y="350" text-anchor="middle" fill="white" font-size="15" font-weight="700">Layer</text>
+                    <text x="1095" y="375" text-anchor="middle" fill="white" font-size="11">Combine Results</text>
+                    <text x="1095" y="395" text-anchor="middle" fill="white" font-size="11">Confidence Scoring</text>
+                    
+                    <!-- Arrow to Output -->
+                    <path d="M 1095 400 L 1095 480" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead3)"/>
+                    
+                    <!-- Output Stage -->
+                    <rect x="1020" y="480" width="150" height="120" fill="#27ae60" rx="5"/>
+                    <text x="1095" y="510" text-anchor="middle" fill="white" font-size="16" font-weight="700">OUTPUT</text>
+                    <text x="1095" y="535" text-anchor="middle" fill="white" font-size="11">• Plain Language</text>
+                    <text x="1095" y="555" text-anchor="middle" fill="white" font-size="11">• Key Metrics</text>
+                    <text x="1095" y="575" text-anchor="middle" fill="white" font-size="11">• Risk Assessment</text>
+                    <text x="1095" y="595" text-anchor="middle" fill="white" font-size="11">• Visualizations</text>
+                    
+                    <!-- Continuous Learning Feedback Loop -->
+                    <path d="M 1095 600 Q 1095 650 600 650 Q 100 650 100 150" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead4)"/>
+                    <text x="600" y="670" text-anchor="middle" fill="#c0392b" font-size="13" font-weight="600" font-style="italic">Continuous Learning Feedback Loop</text>
+                    
+                    <!-- Labels -->
+                    <text x="150" y="30" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 1</text>
+                    <text x="420" y="30" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 2</text>
+                    <text x="775" y="130" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 3a</text>
+                    <text x="775" y="280" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 3b</text>
+                    <text x="775" y="430" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 3c</text>
+                    <text x="1095" y="280" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 4</text>
+                    <text x="1095" y="460" text-anchor="middle" fill="#2c3e50" font-size="13" font-weight="600">Step 5</text>
+                    
+                    <!-- Arrow marker definitions -->
+                    <defs>
+                        <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+                        </marker>
+                        <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#c0392b"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+
             <p><strong>3.2.1 NLP Processing Models</strong></p>
             <ul class="bullet-list">
                 <li><strong>FinBERT Base Model:</strong> Pre-trained on financial texts including 10-K filings, earnings transcripts, and analyst reports, providing domain-specific language understanding</li>
@@ -561,6 +849,106 @@
 
             <div class="subsection-title">3.3 API Architecture and Integration</div>
             <p>The backend exposes RESTful endpoints for document upload, analysis triggering, results retrieval, and historical data access. GraphQL implementation optimizes data fetching efficiency for complex queries requiring multiple related datasets. WebSocket connections enable real-time progress updates during document processing, maintaining user engagement during analysis workflows.</p>
+
+            <div class="figure">
+                <div class="figure-title">Figure 4: User Workflow - From Document Upload to Insights</div>
+                <svg viewBox="0 0 900 800" style="width: 100%; height: auto; background: #f8f9fa; border: 1px solid #e0e0e0;">
+                    <!-- User Icon -->
+                    <circle cx="450" cy="50" r="30" fill="#3498db"/>
+                    <circle cx="450" cy="40" r="12" fill="white"/>
+                    <path d="M 430 55 Q 450 65 470 55" stroke="white" stroke-width="3" fill="none"/>
+                    <text x="450" y="105" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="700">Retail Investor</text>
+                    
+                    <!-- Arrow down -->
+                    <path d="M 450 80 L 450 140" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead6)"/>
+                    
+                    <!-- Step 1: Upload Document -->
+                    <rect x="300" y="140" width="300" height="70" fill="#3498db" rx="8"/>
+                    <text x="450" y="165" text-anchor="middle" fill="white" font-size="16" font-weight="700">1. Upload Financial Document</text>
+                    <text x="450" y="190" text-anchor="middle" fill="white" font-size="12">Balance Sheet / Annual Report / Quarterly Results</text>
+                    <text x="450" y="205" text-anchor="middle" fill="#ecf0f1" font-size="11">(PDF, Excel, or Image)</text>
+                    
+                    <!-- Arrow down -->
+                    <path d="M 450 210 L 450 250" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead6)"/>
+                    
+                    <!-- Step 2: AI Processing -->
+                    <rect x="300" y="250" width="300" height="100" fill="#9b59b6" rx="8"/>
+                    <text x="450" y="275" text-anchor="middle" fill="white" font-size="16" font-weight="700">2. AI Processing (< 30 sec)</text>
+                    <text x="360" y="300" text-anchor="start" fill="white" font-size="11">✓ OCR Extraction</text>
+                    <text x="360" y="318" text-anchor="start" fill="white" font-size="11">✓ Data Validation</text>
+                    <text x="360" y="336" text-anchor="start" fill="white" font-size="11">✓ ML Analysis</text>
+                    <text x="500" y="300" text-anchor="start" fill="white" font-size="11">✓ Metric Extraction</text>
+                    <text x="500" y="318" text-anchor="start" fill="white" font-size="11">✓ NLP Translation</text>
+                    <text x="500" y="336" text-anchor="start" fill="white" font-size="11">✓ Anomaly Detection</text>
+                    
+                    <!-- Real-time Progress Indicator -->
+                    <rect x="650" y="270" width="180" height="60" fill="#ecf0f1" rx="5" stroke="#95a5a6" stroke-width="2"/>
+                    <text x="740" y="290" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">Real-time Progress</text>
+                    <rect x="670" y="300" width="140" height="15" fill="white" rx="7" stroke="#bdc3c7" stroke-width="1"/>
+                    <rect x="670" y="300" width="105" height="15" fill="#27ae60" rx="7"/>
+                    <text x="740" y="311" text-anchor="middle" fill="white" font-size="10" font-weight="700">75%</text>
+                    
+                    <!-- Arrow down -->
+                    <path d="M 450 350 L 450 390" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead6)"/>
+                    
+                    <!-- Step 3: Results Generated -->
+                    <rect x="250" y="390" width="400" height="70" fill="#e74c3c" rx="8"/>
+                    <text x="450" y="415" text-anchor="middle" fill="white" font-size="16" font-weight="700">3. Analysis Results Generated</text>
+                    <text x="450" y="440" text-anchor="middle" fill="white" font-size="12">Key Metrics Extracted • Plain Language Explanations</text>
+                    <text x="450" y="455" text-anchor="middle" fill="#ecf0f1" font-size="11">Risk Assessment • Industry Benchmarks</text>
+                    
+                    <!-- Arrow split into 3 -->
+                    <path d="M 450 460 L 450 500" stroke="#34495e" stroke-width="3" fill="none"/>
+                    <path d="M 450 500 L 200 500" stroke="#34495e" stroke-width="2" fill="none"/>
+                    <path d="M 450 500 L 450 500" stroke="#34495e" stroke-width="2" fill="none"/>
+                    <path d="M 450 500 L 700 500" stroke="#34495e" stroke-width="2" fill="none"/>
+                    
+                    <!-- Output 1: Plain Language Insights -->
+                    <path d="M 200 500 L 200 540" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead6)"/>
+                    <rect x="80" y="540" width="240" height="90" fill="#27ae60" rx="8"/>
+                    <text x="200" y="565" text-anchor="middle" fill="white" font-size="14" font-weight="700">Plain Language Insights</text>
+                    <text x="200" y="585" text-anchor="middle" fill="white" font-size="10">"Strong liquidity: ₹2.10</text>
+                    <text x="200" y="600" text-anchor="middle" fill="white" font-size="10">available per ₹1 of debt."</text>
+                    <text x="200" y="615" text-anchor="middle" fill="white" font-size="10">"ROE 18% - Above industry</text>
+                    <text x="200" y="628" text-anchor="middle" fill="white" font-size="10">average of 15%"</text>
+                    
+                    <!-- Output 2: Interactive Visualizations -->
+                    <path d="M 450 500 L 450 540" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead6)"/>
+                    <rect x="330" y="540" width="240" height="90" fill="#27ae60" rx="8"/>
+                    <text x="450" y="565" text-anchor="middle" fill="white" font-size="14" font-weight="700">Interactive Visualizations</text>
+                    <!-- Mini chart visualization -->
+                    <rect x="350" y="575" width="200" height="50" fill="white" rx="3"/>
+                    <path d="M 360 615 L 380 605 L 400 610 L 420 595 L 440 600 L 460 590 L 480 585 L 500 580 L 520 575 L 540 570" stroke="#3498db" stroke-width="2" fill="none"/>
+                    <text x="450" y="593" text-anchor="middle" fill="#7f8c8d" font-size="9">5-Year Trend</text>
+                    
+                    <!-- Output 3: Risk Assessment -->
+                    <path d="M 700 500 L 700 540" stroke="#34495e" stroke-width="2" fill="none" marker-end="url(#arrowhead6)"/>
+                    <rect x="580" y="540" width="240" height="90" fill="#27ae60" rx="8"/>
+                    <text x="700" y="565" text-anchor="middle" fill="white" font-size="14" font-weight="700">Risk Assessment</text>
+                    <circle cx="700" cy="595" r="25" fill="white"/>
+                    <text x="700" y="602" text-anchor="middle" fill="#27ae60" font-size="16" font-weight="700">LOW</text>
+                    <text x="700" y="625" text-anchor="middle" fill="white" font-size="10">Overall Risk Score</text>
+                    
+                    <!-- Final Arrow -->
+                    <path d="M 200 630 L 200 660 L 450 660" stroke="#34495e" stroke-width="2" fill="none"/>
+                    <path d="M 450 630 L 450 660" stroke="#34495e" stroke-width="2" fill="none"/>
+                    <path d="M 700 630 L 700 660 L 450 660" stroke="#34495e" stroke-width="2" fill="none"/>
+                    <path d="M 450 660 L 450 700" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead6)"/>
+                    
+                    <!-- Final Step: Decision Making -->
+                    <rect x="250" y="700" width="400" height="70" fill="#f39c12" rx="8"/>
+                    <text x="450" y="725" text-anchor="middle" fill="white" font-size="16" font-weight="700">4. Informed Investment Decision</text>
+                    <text x="450" y="750" text-anchor="middle" fill="white" font-size="12">Data-Driven • Confident • Transparent</text>
+                    <text x="450" y="765" text-anchor="middle" fill="#f9e79f" font-size="11">Replace Speculation with Fundamentals</text>
+                    
+                    <!-- Arrow markers -->
+                    <defs>
+                        <marker id="arrowhead6" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#34495e"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
         </div>
 
         <div class="section">
@@ -769,13 +1157,75 @@
             </ul>
 
             <div class="figure">
-                <div class="figure-title">Figure 2: Development Timeline and Capability Evolution</div>
-                <div class="methodology-box">
-                    <p><strong>2025:</strong> Foundation - Basic analysis, metric extraction, single-company focus</p>
-                    <p><strong>2027:</strong> Integration - Multi-agent systems, collaborative workflows, sector specialization</p>
-                    <p><strong>2030:</strong> Autonomy - Autonomous monitoring, predictive intelligence, global markets</p>
-                    <p><strong>2035+:</strong> Standardization - Industry-wide adoption, API ecosystem, educational integration</p>
-                </div>
+                <div class="figure-title">Figure 5: Development Timeline and Capability Evolution</div>
+                <svg viewBox="0 0 1200 500" style="width: 100%; height: auto; background: white; border: 1px solid #e0e0e0;">
+                    <!-- Timeline Line -->
+                    <line x1="100" y1="250" x2="1100" y2="250" stroke="#34495e" stroke-width="4"/>
+                    
+                    <!-- Phase 1: 2025 -->
+                    <circle cx="200" cy="250" r="15" fill="#3498db"/>
+                    <line x1="200" y1="250" x2="200" y2="100" stroke="#3498db" stroke-width="2"/>
+                    <rect x="100" y="30" width="200" height="60" fill="#3498db" rx="5"/>
+                    <text x="200" y="55" text-anchor="middle" fill="white" font-size="18" font-weight="700">2025 - Foundation</text>
+                    <text x="200" y="75" text-anchor="middle" fill="white" font-size="11">Basic Analysis</text>
+                    
+                    <text x="200" y="130" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">• Document Processing</text>
+                    <text x="200" y="145" text-anchor="middle" fill="#2c3e50" font-size="11">• Metric Extraction</text>
+                    <text x="200" y="160" text-anchor="middle" fill="#2c3e50" font-size="11">• Plain Language Translation</text>
+                    <text x="200" y="175" text-anchor="middle" fill="#2c3e50" font-size="11">• Single Company Analysis</text>
+                    
+                    <!-- Phase 2: 2027 -->
+                    <circle cx="450" cy="250" r="15" fill="#e74c3c"/>
+                    <line x1="450" y1="250" x2="450" y2="380" stroke="#e74c3c" stroke-width="2"/>
+                    <rect x="350" y="390" width="200" height="60" fill="#e74c3c" rx="5"/>
+                    <text x="450" y="415" text-anchor="middle" fill="white" font-size="18" font-weight="700">2027 - Integration</text>
+                    <text x="450" y="435" text-anchor="middle" fill="white" font-size="11">AI-Human Collaboration</text>
+                    
+                    <text x="450" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">• Multi-Company Comparison</text>
+                    <text x="450" y="315" text-anchor="middle" fill="#2c3e50" font-size="11">• Multi-Agent AI Systems</text>
+                    <text x="450" y="330" text-anchor="middle" fill="#2c3e50" font-size="11">• Portfolio Integration</text>
+                    <text x="450" y="345" text-anchor="middle" fill="#2c3e50" font-size="11">• Earnings Call Analysis</text>
+                    
+                    <!-- Phase 3: 2030 -->
+                    <circle cx="700" cy="250" r="15" fill="#f39c12"/>
+                    <line x1="700" y1="250" x2="700" y2="100" stroke="#f39c12" stroke-width="2"/>
+                    <rect x="600" y="30" width="200" height="60" fill="#f39c12" rx="5"/>
+                    <text x="700" y="55" text-anchor="middle" fill="white" font-size="18" font-weight="700">2030 - Autonomy</text>
+                    <text x="700" y="75" text-anchor="middle" fill="white" font-size="11">Autonomous Analysis</text>
+                    
+                    <text x="700" y="130" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">• Autonomous Monitoring</text>
+                    <text x="700" y="145" text-anchor="middle" fill="#2c3e50" font-size="11">• Predictive Early Warnings</text>
+                    <text x="700" y="160" text-anchor="middle" fill="#2c3e50" font-size="11">• Real-time Dashboards</text>
+                    <text x="700" y="175" text-anchor="middle" fill="#2c3e50" font-size="11">• Global Market Support</text>
+                    
+                    <!-- Phase 4: 2035+ -->
+                    <circle cx="950" cy="250" r="15" fill="#27ae60"/>
+                    <line x1="950" y1="250" x2="950" y2="380" stroke="#27ae60" stroke-width="2"/>
+                    <rect x="850" y="390" width="200" height="60" fill="#27ae60" rx="5"/>
+                    <text x="950" y="415" text-anchor="middle" fill="white" font-size="18" font-weight="700">2035+ - Standard</text>
+                    <text x="950" y="435" text-anchor="middle" fill="white" font-size="11">Industry Standard</text>
+                    
+                    <text x="950" y="300" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">• Industry-wide Adoption</text>
+                    <text x="950" y="315" text-anchor="middle" fill="#2c3e50" font-size="11">• API Ecosystem</text>
+                    <text x="950" y="330" text-anchor="middle" fill="#2c3e50" font-size="11">• Regulatory Compliance</text>
+                    <text x="950" y="345" text-anchor="middle" fill="#2c3e50" font-size="11">• Educational Integration</text>
+                    
+                    <!-- Capability Growth Arrow -->
+                    <path d="M 150 470 L 1050 470" stroke="#9b59b6" stroke-width="3" fill="none" marker-end="url(#arrowhead5)"/>
+                    <text x="600" y="490" text-anchor="middle" fill="#9b59b6" font-size="14" font-weight="700">Increasing AI Capability & Autonomy</text>
+                    
+                    <!-- Year Labels on Timeline -->
+                    <text x="200" y="270" text-anchor="middle" fill="#34495e" font-size="13" font-weight="700">2025</text>
+                    <text x="450" y="270" text-anchor="middle" fill="#34495e" font-size="13" font-weight="700">2027</text>
+                    <text x="700" y="270" text-anchor="middle" fill="#34495e" font-size="13" font-weight="700">2030</text>
+                    <text x="950" y="270" text-anchor="middle" fill="#34495e" font-size="13" font-weight="700">2035</text>
+                    
+                    <defs>
+                        <marker id="arrowhead5" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+                            <polygon points="0 0, 12 3, 0 6" fill="#9b59b6"/>
+                        </marker>
+                    </defs>
+                </svg>
             </div>
 
             <div class="subsection-title">6.5 Long-Term Mission Statement</div>
